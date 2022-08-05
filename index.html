@@ -16,26 +16,100 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+<header>
+  <nav>
+    <div class="logo"><a href="#"><h1>Ergotherapie AB</h1></a></div>
+    <div class="navigation">
+      <a href="#">Therapeutinen</a>
+      <a href="#">Leistungen</a>
+      <a href="#">Kontakt & Anfahrt</a>
+    </div>
+  </nav>
+  <div class="header-slideshow">
+    <img alt="header"
+         src="https://ik.imagekit.io/jtrj8won4m0/Ergotherapie/pexels-thisisengineering-3861952_nYOUnAy04.jpg"/>
+  </div>
+</header>
+<main>
+  <section id="therapeutinen">
+    <h2>Therapeutinen</h2>
+    <div class="flex">
+      <div>
+        <h3>Elena</h3>
+        <img
+          alt="elena"
+          src="https://ik.imagekit.io/jtrj8won4m0/Ergotherapie/tr:w-170,h-170,fo-face/Bewerbungsfoto_506_B8SkiPdKc.jpg"/>
+        <ul>
+          <li>Hello World!</li>
+          <li>Hello World!</li>
+          <li>Hello World!</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Marie</h3>
+        <img
+          alt="marie"
+          src="https://ik.imagekit.io/jtrj8won4m0/Ergotherapie/tr:w-170,h-170,fo-face/bewerbungsfoto-800x533-D75_2590_O179rbWkf.jpg"/>
+        <ul>
+          <li>Hello World!</li>
+          <li>Hello World!</li>
+          <li>Hello World!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="leistungen">
+    <h2>Leistungen</h2>
+    <div class="flex">
+      <div>
+        Test
+      </div>
+      <div>
+        Test
+      </div>
+    </div>
+  </section>
+  <section id="kontakt">
+    <h2>Kontakt & Anfahrt</h2>
+    <div class="flex">
+      <div>
+        Test
+      </div>
+      <div>
+        Test
+      </div>
+    </div>
+  </section>
+  <footer>
+    Ergotherapie AB 2022
+    <a href="#">Impressum & Datenschutz</a>
+  </footer>
+</main>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<!-- Enable is js is required -->
+<!-- <script src="js/main.js"></script> -->
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
