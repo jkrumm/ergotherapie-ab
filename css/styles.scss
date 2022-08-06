@@ -2,6 +2,11 @@
 @import "normalize";
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@600&display=swap');
 
+@font-face {
+  font-family: 'logo';
+  src: url('/img/Round_Monogram_Left.ttf');
+}
+
 $blue: #F5FAFD;
 $heading: #593E31;
 $dark: #3b3b3b;
@@ -72,9 +77,33 @@ nav {
     color: black;
   }
 
-  .logo h1 {
-    padding: 20px 0;
-    margin-top: 5px;
+  .logo {
+    position: relative;
+
+    span {
+      font-size: 150px;
+      font-family: logo, sans-serif;
+      color: $heading;
+      position: absolute;
+      top: 10px;
+      left: 0;
+
+      &.flip {
+        display: inline-block;
+        margin-left: 60px;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+      }
+    }
+
+    h1 {
+      padding: 20px 0;
+      margin: 20px 0 0 140px;
+      max-width: 200px;
+    }
   }
 
   .navigation-items {
@@ -100,17 +129,17 @@ header {
     position: relative;
     //margin-top: 100px;
     display: flex;
-    padding: 80px 20px 100px;
+    justify-content: space-between;
+    padding: 150px 20px 130px;
   }
 
   .header-headline {
     width: calc(100% - 600px);
-    padding-left: 40px;
 
     h1 {
       margin: 50px 0;
-      font-size: 45px;
-      line-height: 1.6em;
+      font-size: 50px;
+      line-height: 1.5em;
     }
 
     h2 {
@@ -124,7 +153,7 @@ header {
   }
 
   .header-image {
-    width: 600px;
+    width: 570px;
 
     img {
       width: 100%;
@@ -136,8 +165,8 @@ header {
     background: #E4F3F8;
     padding: 30px;
     border-radius: 12px;
-    bottom: 70px;
-    left: 60px;
+    bottom: 100px;
+    left: 20px;
 
     h3, img, span, div {
       padding: 0;

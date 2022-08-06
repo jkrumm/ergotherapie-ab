@@ -539,6 +539,10 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "logo";
+  src: url("/img/Round_Monogram_Left.ttf");
+}
 body {
   font-family: "Inter", sans-serif;
   color: #3b3b3b;
@@ -596,9 +600,30 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav .logo {
+  position: relative;
+}
+nav .logo span {
+  font-size: 150px;
+  font-family: logo, sans-serif;
+  color: #593E31;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+nav .logo span.flip {
+  display: inline-block;
+  margin-left: 60px;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
 nav .logo h1 {
   padding: 20px 0;
-  margin-top: 5px;
+  margin: 20px 0 0 140px;
+  max-width: 200px;
 }
 nav .navigation-items {
   height: 100%;
@@ -620,16 +645,16 @@ header {
 header > div {
   position: relative;
   display: flex;
-  padding: 80px 20px 100px;
+  justify-content: space-between;
+  padding: 150px 20px 130px;
 }
 header .header-headline {
   width: calc(100% - 600px);
-  padding-left: 40px;
 }
 header .header-headline h1 {
   margin: 50px 0;
-  font-size: 45px;
-  line-height: 1.6em;
+  font-size: 50px;
+  line-height: 1.5em;
 }
 header .header-headline h2 {
   text-align: left;
@@ -639,7 +664,7 @@ header .header-headline h2 span {
   opacity: 0.5;
 }
 header .header-image {
-  width: 600px;
+  width: 570px;
 }
 header .header-image img {
   width: 100%;
@@ -649,8 +674,8 @@ header .call {
   background: #E4F3F8;
   padding: 30px;
   border-radius: 12px;
-  bottom: 70px;
-  left: 60px;
+  bottom: 100px;
+  left: 20px;
 }
 header .call h3, header .call img, header .call span, header .call div {
   padding: 0;
