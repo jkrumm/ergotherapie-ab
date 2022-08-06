@@ -852,6 +852,7 @@ header .call .contact-type {
 #kontakt .contact-info iframe {
   margin-top: 50px;
   border-radius: 12px;
+  max-width: 100%;
 }
 #kontakt .contact-info .contact-type:last-of-type span {
   margin-top: 2px;
