@@ -13,6 +13,10 @@ body {
   color: $dark;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lexend', sans-serif;
   color: $heading;
@@ -104,8 +108,9 @@ header {
     padding-left: 40px;
 
     h1 {
-      margin: 80px 0;
+      margin: 50px 0;
       font-size: 45px;
+      line-height: 1.6em;
     }
 
     h2 {
@@ -123,6 +128,24 @@ header {
 
     img {
       width: 100%;
+    }
+  }
+
+  .call {
+    position: absolute;
+    background: #E4F3F8;
+    padding: 30px;
+    border-radius: 12px;
+    bottom: 70px;
+    left: 60px;
+
+    h3, img, span, div {
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-type {
+      margin-top: 15px;
     }
   }
 }
@@ -165,7 +188,7 @@ header {
 
     .description {
       position: absolute;
-      bottom: -10px;
+      bottom: 65px;
       background-color: white;
       text-align: center;
       left: 50%;
@@ -183,11 +206,36 @@ header {
         margin-bottom: 5px;
       }
     }
+
+    ul {
+      margin-top: 30px;
+      color: $heading;
+      list-style: none;
+      position: relative;
+      padding-left: 50px;
+
+      li:first-of-type {
+        margin-bottom: 8px;
+      }
+
+      li::before {
+        content: '▶';
+        position: absolute;
+        left: 25px;
+        padding-top: 3px;
+        font-size: 12px;
+      }
+
+      span {
+        color: $dark;
+      }
+    }
   }
 }
 
 #leistungen {
   background: $blue;
+  text-align: center;
 
   > div {
     margin: 0 auto;
@@ -209,18 +257,30 @@ header {
   }
 }
 
+.contact-type {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+
+
+  img {
+    filter: brightness(0);
+    border-radius: 0;
+  }
+
+  span {
+    position: absolute;
+    left: 40px;
+  }
+}
+
 #kontakt {
   max-width: 1100px;
   margin: 150px auto;
   display: block;
 
   .contact-info {
-    max-width: 400px;
-
-    img {
-      filter: brightness(0);
-      border-radius: 0;
-    }
+    max-width: 450px;
 
     > p {
       margin: 40px 0;
@@ -230,19 +290,12 @@ header {
       display: block;
     }
 
-    > div {
-      display: flex;
-      position: relative;
-      margin: 20px 0;
-
-      span {
-        position: absolute;
-        left: 40px;
-      }
-    }
-
     iframe {
       margin-top: 30px;
+    }
+
+    .contact-type:last-of-type span {
+      margin-top: 3px;
     }
   }
 
@@ -253,14 +306,16 @@ header {
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
     //border-radius: 8px;
     padding: 40px 70px;
+    height: 520px;
 
     h2 {
       margin: 10px 0 40px 0;
+      color: $heading;
     }
 
     span {
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     input, textarea {
@@ -288,18 +343,25 @@ header {
     button {
       margin: 30px auto 0 auto;
       display: block;
-      border: 2px solid $green;
-      background-color: white;
-      color: $dark;
+      color: white;
+      background-color: $green;
+      border: 0;
       padding: 10px 40px;
       transition: all 0.3s;
       cursor: pointer;
-
-      &:hover {
-        color: white;
-        background-color: $green;
-      }
     }
+  }
+}
+
+footer {
+  border-top: 1px solid lightgrey;
+  color: $dark;
+  padding: 10px 0;
+  text-align: center;
+
+  a {
+    margin-left: 20px;
+    color: $dark;
   }
 }
 

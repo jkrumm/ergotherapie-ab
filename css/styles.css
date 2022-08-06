@@ -544,6 +544,10 @@ body {
   color: #3b3b3b;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lexend", sans-serif;
   color: #593E31;
@@ -623,8 +627,9 @@ header .header-headline {
   padding-left: 40px;
 }
 header .header-headline h1 {
-  margin: 80px 0;
+  margin: 50px 0;
   font-size: 45px;
+  line-height: 1.6em;
 }
 header .header-headline h2 {
   text-align: left;
@@ -638,6 +643,21 @@ header .header-image {
 }
 header .header-image img {
   width: 100%;
+}
+header .call {
+  position: absolute;
+  background: #E4F3F8;
+  padding: 30px;
+  border-radius: 12px;
+  bottom: 70px;
+  left: 60px;
+}
+header .call h3, header .call img, header .call span, header .call div {
+  padding: 0;
+  margin: 0;
+}
+header .call .contact-type {
+  margin-top: 15px;
 }
 
 #therapeutinen {
@@ -672,7 +692,7 @@ header .header-image img {
 }
 #therapeutinen .team .description {
   position: absolute;
-  bottom: -10px;
+  bottom: 65px;
   background-color: white;
   text-align: center;
   left: 50%;
@@ -688,9 +708,30 @@ header .header-image img {
   display: block;
   margin-bottom: 5px;
 }
+#therapeutinen .team ul {
+  margin-top: 30px;
+  color: #593E31;
+  list-style: none;
+  position: relative;
+  padding-left: 50px;
+}
+#therapeutinen .team ul li:first-of-type {
+  margin-bottom: 8px;
+}
+#therapeutinen .team ul li::before {
+  content: "▶";
+  position: absolute;
+  left: 25px;
+  padding-top: 3px;
+  font-size: 12px;
+}
+#therapeutinen .team ul span {
+  color: #3b3b3b;
+}
 
 #leistungen {
   background: #F5FAFD;
+  text-align: center;
 }
 #leistungen > div {
   margin: 0 auto;
@@ -707,17 +748,27 @@ header .header-image img {
   margin-right: 15px;
 }
 
+.contact-type {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+}
+.contact-type img {
+  filter: brightness(0);
+  border-radius: 0;
+}
+.contact-type span {
+  position: absolute;
+  left: 40px;
+}
+
 #kontakt {
   max-width: 1100px;
   margin: 150px auto;
   display: block;
 }
 #kontakt .contact-info {
-  max-width: 400px;
-}
-#kontakt .contact-info img {
-  filter: brightness(0);
-  border-radius: 0;
+  max-width: 450px;
 }
 #kontakt .contact-info > p {
   margin: 40px 0;
@@ -725,17 +776,11 @@ header .header-image img {
 #kontakt .contact-info span {
   display: block;
 }
-#kontakt .contact-info > div {
-  display: flex;
-  position: relative;
-  margin: 20px 0;
-}
-#kontakt .contact-info > div span {
-  position: absolute;
-  left: 40px;
-}
 #kontakt .contact-info iframe {
   margin-top: 30px;
+}
+#kontakt .contact-info .contact-type:last-of-type span {
+  margin-top: 3px;
 }
 #kontakt .form {
   margin-top: 100px;
@@ -743,13 +788,15 @@ header .header-image img {
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   padding: 40px 70px;
+  height: 520px;
 }
 #kontakt .form h2 {
   margin: 10px 0 40px 0;
+  color: #593E31;
 }
 #kontakt .form span {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 #kontakt .form input, #kontakt .form textarea {
   border: 1px solid lightgrey;
@@ -771,16 +818,23 @@ header .header-image img {
 #kontakt .form button {
   margin: 30px auto 0 auto;
   display: block;
-  border: 2px solid #3B7640;
-  background-color: white;
-  color: #3b3b3b;
+  color: white;
+  background-color: #3B7640;
+  border: 0;
   padding: 10px 40px;
   transition: all 0.3s;
   cursor: pointer;
 }
-#kontakt .form button:hover {
-  color: white;
-  background-color: #3B7640;
+
+footer {
+  border-top: 1px solid lightgrey;
+  color: #3b3b3b;
+  padding: 10px 0;
+  text-align: center;
+}
+footer a {
+  margin-left: 20px;
+  color: #3b3b3b;
 }
 
 .flex {
