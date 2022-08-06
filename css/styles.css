@@ -546,6 +546,8 @@ template {
 body {
   font-family: "Inter", sans-serif;
   color: #3b3b3b;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -580,6 +582,7 @@ main {
 }
 
 header > div, nav > div {
+  width: calc(100% - 40px);
   max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
@@ -590,7 +593,6 @@ nav {
   background-color: #F5FAFD;
 }
 nav > div {
-  width: 1280px;
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -652,7 +654,7 @@ header .header-headline {
   width: calc(100% - 600px);
 }
 header .header-headline h1 {
-  margin: 50px 0;
+  margin: 40px 0;
   font-size: 50px;
   line-height: 1.5em;
 }
@@ -662,6 +664,9 @@ header .header-headline h2 {
 }
 header .header-headline h2 span {
   opacity: 0.5;
+  position: relative;
+  top: -2px;
+  margin: 0 5px;
 }
 header .header-image {
   width: 570px;
@@ -798,6 +803,7 @@ header .call .contact-type {
 #leistungen {
   background: #F5FAFD;
   text-align: center;
+  margin: 140px auto 130px auto;
 }
 #leistungen > div {
   margin: 0 auto;
@@ -830,7 +836,8 @@ header .call .contact-type {
 
 #kontakt {
   max-width: 1100px;
-  margin: 150px auto;
+  padding: 0 20px;
+  margin: 140px auto;
   display: block;
 }
 #kontakt .contact-info {
@@ -871,7 +878,7 @@ header .call .contact-type {
   background-color: #F9F9F9;
 }
 #kontakt .form input, #kontakt .form textarea {
-  width: 100%;
+  width: calc(100% - 16px);
   padding: 8px;
 }
 #kontakt .form input {
@@ -879,9 +886,6 @@ header .call .contact-type {
 }
 #kontakt .form textarea {
   height: 150px;
-}
-#kontakt .form > .flex > div {
-  width: calc(100% - 20px);
 }
 #kontakt .form button {
   margin: 30px auto 0 auto;
@@ -919,6 +923,121 @@ footer a {
 }
 .flex-4 > div {
   width: calc(25% - 25px);
+}
+
+@media only screen and (max-width: 1140px) {
+  .navigation-items {
+    display: none;
+  }
+  header .header-headline {
+    width: calc(100% - 500px);
+  }
+  header .header-image {
+    padding-top: 50px;
+    max-width: 400px;
+  }
+  header header > div {
+    padding: 100px 20px 300px;
+  }
+  header .call {
+    bottom: -50px;
+  }
+  #therapeutinen {
+    margin: 200px auto 130px;
+  }
+  #praxisräume {
+    margin: 200px auto 135px auto;
+  }
+  #praxisräume h1 {
+    margin-top: 0;
+  }
+  #leistungen {
+    margin: 100px auto;
+  }
+  #kontakt {
+    margin: 100px auto;
+  }
+  #kontakt .contact-info {
+    max-width: 100%;
+    width: 100%;
+  }
+  #kontakt .contact-info iframe {
+    margin: 80px auto 0 auto;
+    display: block;
+  }
+  #kontakt .form {
+    margin: 100px auto 0 auto;
+  }
+  #kontakt .flex {
+    display: block;
+  }
+  #kontakt .form {
+    width: calc(100% - 60px);
+    max-width: 500px;
+    margin: 80px auto 0 auto;
+    display: block;
+    padding: 30px 20px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .flex {
+    display: block;
+  }
+  .flex > div {
+    width: 100%;
+    max-width: 100%;
+  }
+  .flex-4 {
+    display: block;
+  }
+  .flex-4 > div {
+    width: 100%;
+    max-width: 100%;
+  }
+  header .header-headline {
+    width: 100%;
+  }
+  header .header-image {
+    display: none;
+  }
+  header header > div {
+    padding: 100px 20px 300px;
+  }
+  header .call {
+    bottom: -50px;
+  }
+  #therapeutinen {
+    padding: 0 20px;
+  }
+  #therapeutinen h1 {
+    margin: 0;
+    text-align: left;
+  }
+  #therapeutinen .heading {
+    margin-bottom: 70px;
+  }
+  #therapeutinen .heading p {
+    max-width: 100%;
+    width: 100%;
+  }
+  #therapeutinen .team > div:first-of-type {
+    margin-bottom: 120px;
+  }
+  #praxisräume .slideshow {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+  }
+  #praxisräume .description {
+    max-width: 100%;
+    width: 100%;
+  }
+  #leistungen .flex-4 > div {
+    margin-bottom: 60px;
+  }
+  #leistungen .flex-4 > div:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
