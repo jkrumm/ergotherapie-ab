@@ -6,7 +6,7 @@ $blue: #F5FAFD;
 $heading: #593E31;
 $dark: #3b3b3b;
 $beige: #FAF1E0;
-$green: #3B7640;
+$green: #238551;
 
 body {
   font-family: 'Inter', sans-serif;
@@ -155,11 +155,16 @@ header {
   margin: 130px auto;
 
   h1 {
-    margin: 0;
+    margin: 15px 80px;
+    text-align: right;
   }
 
   .heading {
     margin-bottom: 100px;
+
+    p {
+      max-width: 340px;
+    }
   }
 
   .team {
@@ -230,6 +235,28 @@ header {
         color: $dark;
       }
     }
+  }
+}
+
+#praxisräume {
+  margin: 220px auto 170px auto;
+  max-width: 900px;
+  padding: 0 20px;
+
+  .slideshow {
+    width: calc(100% - 360px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .description {
+    max-width: 300px;
+  }
+
+  h1 {
+    margin-top: 60px;
   }
 }
 
