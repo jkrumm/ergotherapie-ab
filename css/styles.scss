@@ -6,6 +6,7 @@ $blue: #F5FAFD;
 $heading: #593E31;
 $dark: #3b3b3b;
 $beige: #FAF1E0;
+$green: #3B7640;
 
 body {
   font-family: 'Inter', sans-serif;
@@ -34,8 +35,13 @@ h2 {
   color: $dark;
 }
 
+main {
+  width: 100%;
+  display: block;
+  position: relative;
+}
 
-main, header > div, nav > div {
+header > div, nav > div {
   max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
@@ -181,13 +187,136 @@ header {
 }
 
 #leistungen {
-  background: #FAF1E0;
+  background: $blue;
+
+  > div {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 80px 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  h3 {
+    &:before {
+      content: "✔";
+      color: $green;
+      margin-right: 15px;
+    }
+  }
+}
+
+#kontakt {
+  max-width: 1100px;
+  margin: 150px auto;
+  display: block;
+
+  .contact-info {
+    max-width: 400px;
+
+    img {
+      filter: brightness(0);
+      border-radius: 0;
+    }
+
+    > p {
+      margin: 40px 0;
+    }
+
+    span {
+      display: block;
+    }
+
+    > div {
+      display: flex;
+      position: relative;
+      margin: 20px 0;
+
+      span {
+        position: absolute;
+        left: 40px;
+      }
+    }
+
+    iframe {
+      margin-top: 30px;
+    }
+  }
+
+  .form {
+    margin-top: 100px;
+    max-width: 350px;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+    //border-radius: 8px;
+    padding: 40px 70px;
+
+    h2 {
+      margin: 10px 0 40px 0;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      border: 1px solid lightgrey;
+      background-color: #F9F9F9;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+    }
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    > .flex > div {
+      width: calc(100% - 20px);
+    }
+
+    button {
+      margin: 30px auto 0 auto;
+      display: block;
+      border: 2px solid $green;
+      background-color: white;
+      color: $dark;
+      padding: 10px 40px;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background-color: $green;
+      }
+    }
+  }
 }
 
 .flex {
   display: flex;
+  justify-content: space-between;
 
   > div {
     width: 50%;
+  }
+}
+
+.flex-4 {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: calc(25% - 25px);
   }
 }
