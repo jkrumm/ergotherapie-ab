@@ -13,6 +13,8 @@ $dark: #3b3b3b;
 $beige: #FAF1E0;
 $green: #238551;
 
+$tick: 'https://ik.imagekit.io/jtrj8won4m0/Ergotherapie/8541612_check_tick_mark_icon_MsZk1OIPY.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659788150067';
+
 body {
   font-family: 'Inter', sans-serif;
   color: $dark;
@@ -90,7 +92,7 @@ nav {
 
       &.flip {
         display: inline-block;
-        margin-left: 60px;
+        margin-left: 50px;
         -moz-transform: scale(-1, 1);
         -webkit-transform: scale(-1, 1);
         -o-transform: scale(-1, 1);
@@ -101,7 +103,7 @@ nav {
 
     h1 {
       padding: 20px 0;
-      margin: 20px 0 0 140px;
+      margin: 22px 0 0 120px;
       max-width: 200px;
     }
   }
@@ -243,7 +245,6 @@ header {
 
     ul {
       margin-top: 30px;
-      color: $heading;
       list-style: none;
       position: relative;
       padding-left: 50px;
@@ -253,14 +254,17 @@ header {
       }
 
       li::before {
-        content: '▶';
+        content: '✔';
         position: absolute;
+        color: $green;
         left: 25px;
-        padding-top: 3px;
-        font-size: 12px;
+        font-size: 20px;
       }
 
       span {
+        position: relative;
+        top: 2px;
+        left: 5px;
         color: $dark;
       }
     }
@@ -285,7 +289,27 @@ header {
   }
 
   h1 {
-    margin-top: 60px;
+    margin-top: 30px;
+  }
+
+  ul {
+    margin: 35px 0 0 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+
+    &:before {
+      content: "▶";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      font-size: 12px;
+    }
   }
 }
 
@@ -347,11 +371,13 @@ header {
     }
 
     iframe {
-      margin-top: 30px;
+      margin-top: 50px;
+      border-radius: 12px;
     }
 
     .contact-type:last-of-type span {
-      margin-top: 3px;
+      margin-top: 2px;
+      line-height: 1.6em;
     }
   }
 

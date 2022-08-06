@@ -613,7 +613,7 @@ nav .logo span {
 }
 nav .logo span.flip {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 50px;
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   -o-transform: scale(-1, 1);
@@ -622,7 +622,7 @@ nav .logo span.flip {
 }
 nav .logo h1 {
   padding: 20px 0;
-  margin: 20px 0 0 140px;
+  margin: 22px 0 0 120px;
   max-width: 200px;
 }
 nav .navigation-items {
@@ -739,7 +739,6 @@ header .call .contact-type {
 }
 #therapeutinen .team ul {
   margin-top: 30px;
-  color: #593E31;
   list-style: none;
   position: relative;
   padding-left: 50px;
@@ -748,13 +747,16 @@ header .call .contact-type {
   margin-bottom: 8px;
 }
 #therapeutinen .team ul li::before {
-  content: "▶";
+  content: "✔";
   position: absolute;
+  color: #238551;
   left: 25px;
-  padding-top: 3px;
-  font-size: 12px;
+  font-size: 20px;
 }
 #therapeutinen .team ul span {
+  position: relative;
+  top: 2px;
+  left: 5px;
   color: #3b3b3b;
 }
 
@@ -773,7 +775,24 @@ header .call .contact-type {
   max-width: 300px;
 }
 #praxisräume h1 {
-  margin-top: 60px;
+  margin-top: 30px;
+}
+#praxisräume ul {
+  margin: 35px 0 0 0;
+  list-style: none;
+  padding: 0;
+}
+#praxisräume li {
+  margin: 12px 0;
+  padding-left: 25px;
+  position: relative;
+}
+#praxisräume li:before {
+  content: "▶";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 12px;
 }
 
 #leistungen {
@@ -824,10 +843,12 @@ header .call .contact-type {
   display: block;
 }
 #kontakt .contact-info iframe {
-  margin-top: 30px;
+  margin-top: 50px;
+  border-radius: 12px;
 }
 #kontakt .contact-info .contact-type:last-of-type span {
-  margin-top: 3px;
+  margin-top: 2px;
+  line-height: 1.6em;
 }
 #kontakt .form {
   margin-top: 100px;
