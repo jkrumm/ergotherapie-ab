@@ -7,7 +7,15 @@
   src: url('/img/Round_Monogram_Left.ttf');
 }
 
-$blue: #F5FAFD;
+@font-face {
+  font-family: 'heading';
+  src: url('/img/BASKVILL.ttf');
+}
+
+// $blue: #F5FAFD;
+// $blue: #E5DED1;
+// $blue: #F5EDDE;
+$blue: rgba(245, 237, 222, 0.4);
 $heading: #593E31;
 $dark: #3b3b3b;
 $beige: #FAF1E0;
@@ -27,7 +35,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'heading', sans-serif;
+  font-weight: bold;
   color: $heading;
 }
 
@@ -169,7 +178,8 @@ header {
 
   .call {
     position: absolute;
-    background: #E4F3F8;
+    // background: #E4F3F8;
+    background: white;
     padding: 30px;
     border-radius: 12px;
     bottom: 100px;

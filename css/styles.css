@@ -543,6 +543,10 @@ template {
   font-family: "logo";
   src: url("/img/Round_Monogram_Left.ttf");
 }
+@font-face {
+  font-family: "heading";
+  src: url("/img/BASKVILL.ttf");
+}
 body {
   font-family: "Inter", sans-serif;
   color: #3b3b3b;
@@ -555,7 +559,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lexend", sans-serif;
+  font-family: "heading", sans-serif;
+  font-weight: bold;
   color: #593E31;
 }
 
@@ -590,7 +595,7 @@ header > div, nav > div {
 }
 
 nav {
-  background-color: #F5FAFD;
+  background-color: rgba(245, 237, 222, 0.4);
 }
 nav > div {
   display: flex;
@@ -642,7 +647,7 @@ nav .navigation-items a {
 }
 
 header {
-  background-color: #F5FAFD;
+  background-color: rgba(245, 237, 222, 0.4);
 }
 header > div {
   position: relative;
@@ -676,7 +681,7 @@ header .header-image img {
 }
 header .call {
   position: absolute;
-  background: #E4F3F8;
+  background: white;
   padding: 30px;
   border-radius: 12px;
   bottom: 100px;
@@ -801,7 +806,7 @@ header .call .contact-type {
 }
 
 #leistungen {
-  background: #F5FAFD;
+  background: rgba(245, 237, 222, 0.4);
   text-align: center;
   margin: 140px auto 130px auto;
 }
