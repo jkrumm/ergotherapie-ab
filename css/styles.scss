@@ -19,7 +19,8 @@ $blue: rgba(245, 237, 222, 0.4);
 $heading: #593E31;
 $dark: #3b3b3b;
 $beige: #FAF1E0;
-$green: #238551;
+//$green: #238551;
+$green: #006100;
 
 $tick: 'https://ik.imagekit.io/jtrj8won4m0/Ergotherapie/8541612_check_tick_mark_icon_MsZk1OIPY.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659788150067';
 
@@ -151,7 +152,7 @@ header {
 
     h1 {
       margin: 40px 0;
-      font-size: 50px;
+      font-size: 60px;
       line-height: 1.5em;
     }
 
@@ -182,7 +183,7 @@ header {
     background: white;
     padding: 30px;
     border-radius: 12px;
-    bottom: 100px;
+    bottom: 90px;
     left: 20px;
 
     h3, img, span, div {
@@ -269,7 +270,7 @@ header {
       }
 
       li::before {
-        content: '✔';
+        content: '✓';
         position: absolute;
         color: $green;
         left: 25px;
@@ -319,7 +320,7 @@ header {
     position: relative;
 
     &:before {
-      content: "▶";
+      content: "➤";
       position: absolute;
       top: 3px;
       left: 0;
@@ -346,7 +347,7 @@ header {
 
   h3 {
     &:before {
-      content: "✔";
+      content: "✓";
       color: $green;
       margin-right: 15px;
     }
@@ -437,12 +438,12 @@ header {
     }
 
     button {
-      margin: 30px auto 0 auto;
+      margin: 30px auto 0;
       display: block;
       color: white;
       background-color: $green;
       border: 0;
-      padding: 10px 40px;
+      padding: 12px 45px;
       transition: all 0.3s;
       cursor: pointer;
     }
@@ -487,6 +488,14 @@ footer {
   header {
     .header-headline {
       width: calc(100% - 500px);
+
+      h1 {
+        font-size: 50px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
     }
 
     .header-image {
@@ -494,14 +503,15 @@ footer {
       max-width: 400px;
     }
 
-    header > div {
-      padding: 100px 20px 300px;
+    > div {
+      padding: 150px 20px 180px;
     }
 
     .call {
-      bottom: -50px;
+      bottom: -20px;
     }
   }
+
 
   #therapeutinen {
     margin: 200px auto 130px;
@@ -578,12 +588,12 @@ footer {
       display: none;
     }
 
-    header > div {
-      padding: 100px 20px 300px;
+    > div {
+      padding: 130px 20px 180px;
     }
 
     .call {
-      bottom: -50px;
+      bottom: -20px;
     }
   }
 
@@ -627,6 +637,13 @@ footer {
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+  }
+
+  #kontakt {
+    .form {
+      height: unset;
+      min-height: 520px;
     }
   }
 }
