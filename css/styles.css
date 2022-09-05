@@ -542,6 +542,7 @@ template {
 @font-face {
   font-family: "heading";
   src: url("/img/BASKVILL.ttf");
+  font-display: swap;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -607,10 +608,13 @@ nav .logo {
   position: relative;
 }
 nav .logo img {
-  content: "";
   position: absolute;
-  top: 44px;
+  top: 42px;
   left: 0;
+  width: 102px;
+  z-index: 9999999;
+  display: block;
+  height: 105px;
 }
 nav .logo img.flip {
   display: inline-block;

@@ -10,6 +10,7 @@
 @font-face {
   font-family: 'heading';
   src: url('/img/BASKVILL.ttf');
+  font-display: swap;
 }
 
 // $blue: #F5FAFD;
@@ -96,10 +97,13 @@ nav {
     position: relative;
 
     img {
-      content: "";
       position: absolute;
-      top: 44px;
+      top: 42px;
       left: 0;
+      width: 102px;
+      z-index: 9999999;
+      display: block;
+      height: 105px;
 
       &.flip {
         display: inline-block;
