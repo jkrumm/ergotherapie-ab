@@ -602,7 +602,7 @@ nav > div {
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: #3b3b3b;
 }
 nav .logo {
   position: relative;
@@ -870,8 +870,16 @@ header .call-flex .call.last {
   margin-bottom: 50px;
 }
 #kontakt .contact-info a {
-  color: black;
+  color: #3b3b3b;
   text-decoration: none;
+}
+#kontakt .contact-info #map {
+  margin-top: 70px;
+  border-radius: 12px;
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 #kontakt .contact-info iframe {
   margin-top: 70px;

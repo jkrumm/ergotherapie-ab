@@ -90,7 +90,7 @@ nav {
 
   a {
     text-decoration: none;
-    color: black;
+    color: $dark;
   }
 
   .logo {
@@ -430,8 +430,17 @@ header {
     }
 
     a {
-      color: black;
+      color: $dark;
       text-decoration: none;
+    }
+
+    #map {
+      margin-top: 70px;
+      border-radius: 12px;
+      height: 400px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
     }
 
     iframe {
