@@ -405,6 +405,14 @@ header {
   span {
     position: absolute;
     left: 40px;
+    color: $dark;
+  }
+
+  &.less a {
+    position: absolute;
+    left: 40px;
+    color: $dark;
+    text-decoration: none;
   }
 }
 

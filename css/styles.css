@@ -849,6 +849,13 @@ header .call-flex .call.last {
 .contact-type span {
   position: absolute;
   left: 40px;
+  color: #3b3b3b;
+}
+.contact-type.less a {
+  position: absolute;
+  left: 40px;
+  color: #3b3b3b;
+  text-decoration: none;
 }
 
 #kontakt {
