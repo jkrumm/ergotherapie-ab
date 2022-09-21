@@ -651,13 +651,13 @@ header > div {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 150px 20px 300px;
+  padding: 150px 20px 130px;
 }
 header .header-headline {
   width: calc(100% - 600px);
 }
 header .header-headline h1 {
-  margin: 100px 0 40px;
+  margin: 30px 0 40px;
   font-size: 60px;
   line-height: 1.5em;
 }
@@ -680,11 +680,8 @@ header .header-image img {
 header .call-flex {
   position: absolute;
   display: flex;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 60px;
-  width: 100%;
-  max-width: 1000px;
+  bottom: 128px;
+  width: 570px;
   justify-content: space-between;
 }
 header .call-flex .call {
@@ -1007,7 +1004,12 @@ footer a {
     padding: 100px 20px 250px;
   }
   header .call-flex {
-    max-width: calc(100vw - 30px);
+    width: calc(100vw - 30px);
+    justify-content: center;
+    bottom: 90px;
+  }
+  header .call-flex .call.last {
+    margin-left: 50px;
   }
   header .call {
     bottom: -20px;
